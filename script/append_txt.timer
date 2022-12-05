@@ -1,0 +1,8 @@
+[Unit]
+Description=Executes the append_txt service every 10 sec
+
+[Timer]
+OnUnitInactiveSec=10s
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=appending text to file
+
+[Service]
+Type=simple
+ExecStart=/home/thomas/devops/System_admin/myservice_script.sh
+User=thomas
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
